@@ -62,7 +62,7 @@ const duplicate = (arr) => {
   return Array.from(duplicates);
 };
 
-console.log(duplicate([4, 2, 5, 6, 2])); // [2]
+console.log(duplicate([4, 2, 5, 6, 2]));
 
 
 
@@ -76,7 +76,36 @@ const countDuplicates = (arr) => {
 };
 
 console.log(countDuplicates([4, 2, 5, 6, 2, 4])); 
-// [['4', 2], ['2', 2]]
+
+
+
+
+
+//removeDuplicates
+const removeDuplicates = (arr) => {
+    let dup = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (dup.indexOf(arr[i]) === -1) {
+            dup.push(arr[i]);
+        }
+    }
+    return dup;
+}
+
+console.log(removeDuplicates([1, 2, 4, 5, 6, 3, 2]));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
