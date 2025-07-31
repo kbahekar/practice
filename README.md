@@ -8,7 +8,5 @@ const flatArray = (arr) => {
     },[])
     
 }
-
-
 console.log(flatArray([1,[2,4,[5]]]))
 
