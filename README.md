@@ -30,3 +30,24 @@ console.log(pal(121))
 
 
 
+//largest number from array
+
+const largestNum = (num) =>{
+    let largest = 0;
+    for(i=0; i < num.length ; i++){
+        if(largest < num[i]){
+            largest = num[i]
+        }
+    }
+    return largest
+}
+
+
+console.log(largestNum([1,2.4,09,800,23,90,955]))
+
+
+
+
+
+
+
