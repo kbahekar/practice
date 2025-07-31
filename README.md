@@ -47,6 +47,36 @@ console.log(largestNum([1,2.4,09,800,23,90,955]))
 
 
 
+const duplicate = (arr) => {
+  const seen = new Set();
+  const duplicates = new Set();
+
+  for (const num of arr) {
+    if (seen.has(num)) {
+      duplicates.add(num);
+    } else {
+      seen.add(num);
+    }
+  }
+
+  return Array.from(duplicates);
+};
+
+console.log(duplicate([4, 2, 5, 6, 2])); // [2]
+
+
+
+
+const countDuplicates = (arr) => {
+  const map = {};
+  for (const num of arr) {
+    map[num] = (map[num] || 0) + 1;
+  }
+  return Object.entries(map).filter(([_, count]) => count > 1);
+};
+
+console.log(countDuplicates([4, 2, 5, 6, 2, 4])); 
+// [['4', 2], ['2', 2]]
 
 
 
