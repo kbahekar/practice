@@ -91,3 +91,18 @@ data = {
     data,...info
 }
 console.log(data)
+
+//14
+let data = {
+    name:'kamlesh',
+    age:30,
+    skill:'JS'
+}
+let info = {
+    city:'nagpur',
+     skill:'Angular'
+}
+data = {
+    ...data,...info
+}
+console.log(data)
