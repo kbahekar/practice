@@ -59,5 +59,20 @@ const data = {
 }
 const {name} = data
 console.log(name)
+// 12
 
+let data = {
+    name:'kamlesh',
+    age:30,
+    skill:'JS'
+}
+let info = {
+    city:'nagpur',
+    mail:'k@gmail.com'
+}
+
+data = {
+    ...data,...info
+}
+console.log(data)
 
