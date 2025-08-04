@@ -106,3 +106,21 @@ data = {
     ...data,...info
 }
 console.log(data)
+
+//15
+let name = "kamlesh"
+console.log(name())
+
+//16
+const result = false || {} || null ;
+
+console.log(result)
+//17
+
+const result = false  || null || '' ;
+console.log(result)
+
+//18
+const result = []  || 0 || true ;
+console.log(result)
+
