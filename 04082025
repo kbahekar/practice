@@ -60,3 +60,16 @@ console.log(typeof var2)
 // console.log(foo)
 // var foo
 
+
+
+
+//carrying
+
+const multiply = (num) =>{
+    return (num2) => {
+        return num*num2
+    }
+}
+
+console.log(multiply(2)(3))
+
