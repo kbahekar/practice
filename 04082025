@@ -35,3 +35,17 @@ const names = users.sort((user1,user2)=>(user1.age < user2.age ? -1 : 1 )).filte
 
 
 
+
+
+let var1
+console.log(var1)
+console.log(typeof var1)
+
+
+let var2 = null
+console.log(var2)
+console.log(typeof var2)
+
+
+
+
