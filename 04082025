@@ -24,5 +24,8 @@ const names = [];
 for(let i =0; i < users.length ; i++){
     names.push(users[i].name)
 }
-
 console.log(names)
+using forEach loop
+users.forEach((x)=>{
+    names.push(x.name)
+})
