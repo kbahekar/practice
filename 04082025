@@ -29,3 +29,7 @@ using forEach loop
 users.forEach((x)=>{
     names.push(x.name)
 })
+const names = users.map((x)=> x.name)
+
+
+
