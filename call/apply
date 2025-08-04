@@ -1,0 +1,28 @@
+// call apply 
+
+
+
+let student = {
+    name: 'kedar',
+    last: 'bahekar',
+    age: 24,
+};
+
+let teacher = {
+    name: 'priti',
+    last: 'bahekar',
+    age: 24,
+};
+
+function getEmail() {
+    return `${this.name}.${this.last}@gmail.com`;
+}
+
+function getSubject(...sub) {
+    return sub.join(",")
+}
+
+console.log(getEmail.call(teacher));                
+console.log(getSubject.call(teacher, "maths", "english"));
+
+console.log(getSubject.apply(teacher, ["maths", "english"]));
