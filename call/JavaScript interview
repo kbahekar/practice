@@ -75,4 +75,19 @@ data = {
     ...data,...info
 }
 console.log(data)
+//13
 
+let data = {
+    name:'kamlesh',
+    age:30,
+    skill:'JS'
+}
+let info = {
+    city:'nagpur',
+    mail:'k@gmail.com'
+}
+
+data = {
+    data,...info
+}
+console.log(data)
