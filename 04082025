@@ -1,0 +1,28 @@
+Write code to get array of names from given array of users
+
+
+const users = [
+    {
+        id:1,
+        name:'kamlesh',
+        isActive:true
+    },
+        {
+        id:2,
+        name:'priti',
+        isActive:true
+    },
+        {
+        id:2,
+        name:'sona',
+        isActive:true
+    },
+    ]
+    
+const names = [];
+
+for(let i =0; i < users.length ; i++){
+    names.push(users[i].name)
+}
+
+console.log(names)
