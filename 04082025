@@ -30,6 +30,8 @@ users.forEach((x)=>{
     names.push(x.name)
 })
 const names = users.map((x)=> x.name)
+const names = users.sort((user1,user2)=>(user1.age < user2.age ? -1 : 1 )).filter((user)=> user.isActive).map((x)=> x.name)
+
 
 
 
