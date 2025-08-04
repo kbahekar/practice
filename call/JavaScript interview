@@ -28,3 +28,25 @@ console.log(...z)
 
 //5
 console.log(typeof NaN)
+
+//6
+let data = 10 - -10
+
+console.log(data)
+//7
+let set = new Set([1,1,2,3,4])
+console.log(set)
+//8
+let data = {
+    name:"anil"
+}
+console.log(delete data.name)
+//9
+
+let data = {
+    name:"anil"
+}
+console.log(delete data)
+console.log(data)
+
+
