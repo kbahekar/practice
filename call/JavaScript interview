@@ -22,3 +22,9 @@ let b = [20];
 console.log(a[0] == b[0]);
 console.log(a[0] === b[0]);
 
+//4
+z = [1,2,3,4,5]
+console.log(...z)
+
+//5
+console.log(typeof NaN)
