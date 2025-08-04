@@ -48,5 +48,16 @@ let data = {
 }
 console.log(delete data)
 console.log(data)
+//10
+const data = ['kamlesh', 'kailash','priti']
+const [y] = data
+console.log(y)
+//11
+const data = {
+    name:'kamlesh',
+    age:30,
+}
+const {name} = data
+console.log(name)
 
 
