@@ -1,0 +1,22 @@
+//Check number palindrome
+
+function reverse(n){
+    let reverse =0
+    let num = n
+    while(n !==0){
+        let remain = Math.floor(n%10);
+        reverse = reverse*10 + remain;
+        n = Math.floor(n/10)
+    }
+    // console.log(reverse)
+    if(reverse == num){
+        console.log('Number is palindrome')
+    }else {
+        console.log('Number is not palindrome')
+    }
+    
+}
+
+reverse(121)
+
+
