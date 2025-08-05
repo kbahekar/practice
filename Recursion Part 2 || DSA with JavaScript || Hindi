@@ -1,0 +1,11 @@
+//Recursion Part 2 || DSA with JavaScript || Hindi
+
+
+
+function printName(n){
+    if(n===0)return;
+    console.log('kamlesh',`${n}`)
+    printName(n-1)
+}
+
+printName(7)
