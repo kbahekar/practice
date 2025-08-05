@@ -182,6 +182,26 @@ printPattern(5)
    ***   
     *  
 
+function printPattern(n){
+    for(let i = 1; i <= 2 * n - 1; i++){
+        let stars = i <= n ? i : 2 * n - i;
+        let pattern = '';
+        for(let j = 0; j < stars; j++){
+            pattern += "*";
+        }
+        console.log(pattern);
+    }
+}
+printPattern(5)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
 
 
 
