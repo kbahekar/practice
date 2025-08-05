@@ -37,3 +37,29 @@ const result = getSumZero([-5,-4,-3,-2,0,2,4,6,8])
 
 console.log(result)
 
+//String Anagram Problem 
+
+
+function anagram(str1,str2){
+    if(str1.length!==str2.length){
+        return false;
+    }
+    count ={};
+    for(let letter of str1){
+        count[letter] = (count[letter] || 0) + 1;
+    }
+    console.log(count)
+    for(let items of str2){
+        if(!count[items]){
+            return false;
+        }else{
+            count[items] -=1
+        }
+    }
+    return true;
+    
+}
+
+
+const result =anagram('hello','llohe')
+console.log(result)
