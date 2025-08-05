@@ -1,0 +1,13 @@
+//Reverse number
+function reverse(n){
+    let reverse =0
+    while(n !==0){
+        let remain = Math.floor(n%10);
+        reverse = reverse*10 + remain;
+        n = Math.floor(n/10)
+    }
+    console.log(reverse)
+    
+}
+
+reverse(12345)
