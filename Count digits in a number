@@ -1,0 +1,20 @@
+//Count digits in a number
+
+function countDigit(n){
+    let newNnumber = n.toString();
+    return newNnumber.length;
+}
+
+console.log(countDigit(123450987654))
+
+function countDigit(n){
+    let digit =0;
+    while(n !==0){
+        n = Math.floor(n/10)
+        // console.log(n)
+        digit++
+    }
+    return digit
+}
+
+console.log(countDigit(0987654321))
