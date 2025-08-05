@@ -1,0 +1,9 @@
+//Recursion Part 1 || DSA with JavaScript || Hindi
+
+function getPowerOfTwo(n){
+    if(n === 1) return 2;
+    const power = getPowerOfTwo(n-1);
+    return 2 * power
+}
+
+console.log(getPowerOfTwo(5))
