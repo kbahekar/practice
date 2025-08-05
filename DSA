@@ -36,3 +36,21 @@ printPattern(5)
 * * * * 
 * * * * *
 
+Pattern 3
+function printPattern(n){
+    let pattern ='';
+    for(let i=0;i<n;i++){
+        for(let j=0; j < i+1;j++){
+            pattern += j+1 + " "
+        }
+    console.log(pattern)
+       pattern=''
+    }
+}
+
+printPattern(5)
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
