@@ -1,0 +1,21 @@
+
+
+function checkSqu(arr1,arr2){
+    for(i=0;i< arr1.length;i++){
+        isSuqare = false;
+        for(j=0; j<arr2.length;j++){
+            if(arr1[i]*arr1[i] ===arr2[j]){
+                  isSuqare = true;
+            }
+            if(j === arr2.length-1){
+            if(!isSuqare){
+                isSuqare = false;
+            }
+            }
+        }
+    }
+    return true
+    
+}
+
+console.log(checkSqu([1,2,3,4],[1,4,9,16]))
