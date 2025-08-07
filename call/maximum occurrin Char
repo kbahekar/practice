@@ -1,0 +1,25 @@
+
+
+
+
+function occurrinCh(str){
+    let map= {}
+    str.split('').forEach((el)=>{
+        // console.log(el)
+        map[el]=map[el]?map[el]+1:1
+    })
+    let max=1;
+    let char=''
+    // console.log(map)
+    for(let k in map){
+        // console.log(map[k])
+        if(map[k] > max){
+            max =  map[k]
+            char= k
+        }
+    }
+    return char
+    
+}
+const result = occurrinCh("hello world kkkk")
+console.log(result,"result")
