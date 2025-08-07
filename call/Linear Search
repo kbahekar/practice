@@ -1,0 +1,23 @@
+const users = [
+    {
+        username:'kamlesh',age:28,email:'kamlesh@gmail.com'
+    },
+       {
+        username:'kedar',age:30,email:'kedar@gmail.com'
+    },
+       {
+        username:'priti',age:27,email:'priti@gmail.com'
+    },
+    
+    ]
+function linearSearch(arr,val){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].username == val){
+            return true;
+        }
+    }
+    return false;
+}
+
+const result = linearSearch(users,'kamlesh')
+console.log(result)
