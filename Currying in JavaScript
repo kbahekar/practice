@@ -1,1 +1,34 @@
 
+//function carrying
+
+
+
+
+function addition(a){
+    return function(b){
+        return function(c){
+         return   a+b+c;
+        }
+    }
+}
+
+
+console.log(addition(1)(2)(3))
+
+
+userData = {
+    name:'kamlesh',
+    age:28
+}
+
+
+
+function getUser(obj){
+    return function(user){
+        return obj[user]
+    }
+}
+console.log(getUser(userData)('age'))
+
+
+
